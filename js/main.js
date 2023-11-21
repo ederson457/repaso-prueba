@@ -1,0 +1,3 @@
+selectChanged = function () {
+    alert("Cambió");
+}

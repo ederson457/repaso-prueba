@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src='../js/main.js'></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form action="show.php" method="post">
+                    <div class="field">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="field">
+                        <label for="country">País:</label>
+                        <select name="country" id="country" required>
+                            <option value="">Seleccione su país</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="department">Departamento:</label>
+                        <select name="department" id="department" required>
+
+                            <option value="">Seleccione su departamento</option>
+                            <optgroup label="Departamentos de colombia">
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Antioquia">Antioquia</option>
+                                <option value="Arauca">Arauca</option>
+                                <option value="Atlántico">Atlántico</option>
+                                <option value="Bolívar">Bolívar</option>
+                                <option value="Boyacá">Boyacá</option>
+                                <option value="Caldas">Caldas</option>
+                                <option value="Caquetá">Caquetá</option>
+                                <option value="Casanare">Casanare</option>
+                                <option value="Cauca">Cauca</option>
+                                <option value="Cesar">Cesar</option>
+                                <option value="Chocó">Chocó</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Cundinamarca">Cundinamarca</option>
+                                <option value="Guainía">Guainía</option>
+                                <option value="Guaviare">Guaviare</option>
+                                <option value="Huila">Huila</option>
+                                <option value="La Guajira">La Guajira</option>
+                                <option value="Magdalena">Magdalena</option>
+                                <option value="Meta">Meta</option>
+                                <option value="Nariño">Nariño</option>
+                                <option value="Norte de Santander">Norte de Santander</option>
+                                <option value="Putumayo">Putumayo</option>
+                                <option value="Quindío">Quindío</option>
+                                <option value="Risaralda">Risaralda</option>
+                                <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                                <option value="Santander">Santander</option>
+                                <option value="Sucre">Sucre</option>
+                                <option value="Tolima">Tolima</option>
+                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                <option value="Vaupés">Vaupés</option>
+                                <option value="Vichada">Vichada</option>
+                            </optgroup>
+
+                            <optgroup label="Departamentos de Ecuador">
+                                <option value="Esmeraldas">Esmeraldas</option>
+                                <option value="Manabi">Manabi</option>
+                                <option value="Los rios">Los rios</option>
+                                <option value="Santa Elena">Santa Elena</option>
+                                <option value="Guayas">Guayas</option>
+                                <option value="Santo Domingo de los Tsáchilas">Santo Domingo de los Tsáchilas</option>
+                                <option value="El Oro">El Oro</option>
+                                <option value="Azuay">Azuay</option>
+                                <option value="Bolivar">Bolivar</option>
+                                <option value="Cañar">Cañar</option>
+                                <option value="Carchi">Carchi</option>
+                                <option value="Cotopaxi">Cotopaxi</option>
+                                <option value="Chimborazo">Chimborazo</option>
+                                <option value="Imbabura">Imbabura</option>
+                                <option value="Loja">Loja</option>
+                                <option value="Pichincha">Pichincha</option>
+                                <option value="Tungurahua">Tungurahua</option>
+                                <option value="Morona Santiago">Morona Santiago</option>
+                                <option value="Napo">Napo</option>
+                                <option value="Orellana">Orellana</option>
+                                <option value="Pastaza">Pastaza</option>
+                                <option value="Sucumbios">Sucumbios</option>
+                                <option value="Zamora Chinchipe">Zamora Chinchipe</option>
+                            </optgroup>
+
+                            <optgroup label="Departamentos de Panama">
+                                <option value="Bocas del Toro">Bocas del Toro</option>
+                                <option value="Cocle">Cocle</option>
+                                <option value="Colon">Colon</option>
+                                <option value="Chiriqui">Chiriqui</option>
+                                <option value="Darien">Darien</option>
+                                <option value="Herrera">Herrera</option>
+                                <option value="Los Santos">Los Santos</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Veraguas">Veraguas</option>
+                                <option value="Los Panama Oeste">Panama Oeste</option>
+                            </optgroup>
+
+                            <optgroup label="Departamentos de Peru">
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Ancash">Ancash</option>
+                                <option value="Apurimac">Apurimac</option>
+                                <option value="Arequipa">Arequipa</option>
+                                <option value="Ayacucho">Ayacucho</option>
+                                <option value="Cajamarca">Cajamarca</option>
+                                <option value="Callao">Callao</option>
+                                <option value="Cusco">Cusco</option>
+                                <option value="Huancavelica">Huancavelica</option>
+                                <option value="Huanuco">Huanuco</option>
+                                <option value="Ica">Ica</option>
+                                <option value="Junin">Junin</option>
+                                <option value="La libertad">La libertad</option>
+                                <option value="Lambayeque">Lambayeque</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Loreto">Loreto</option>
+                                <option value="Madre de Dios">Madre de Dios</option>
+                                <option value="Moquegua">Moquegua</option>
+                                <option value="Pasco">Pasco</option>
+                                <option value="Piura">Piura</option>
+                                <option value="Puno">Puno</option>
+                                <option value="San Martin">San Martin</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Tumbes">Tumbes</option>
+                                <option value="Ucayali">Ucayali</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+
+                    <label for="date">Fecha de nacimiento:</label>
+
+                    <input type="date" id="date" name="date" value="2005-10-12" max="2005-10-12" />
+
+                    <br><br>
+                    <div class="field">
+                        <label for="c_p">Preferencias de contacto:</label>
+                        <input type="checkbox" value="ce" name="c_p[]" id="c_p_1">
+                        Correo elctrónico
+                        <input type="checkbox" value="cel" name="c_p[]" id="c_p_2">
+                        Celular
+                        <input type="checkbox" value="sms" name="c_p[]" id="c_p_3">
+                        SMS
+                    </div>
+
+                    <div class="field">
+                        <label for="gender">Genero biológico:</label>
+                        <input type="radio" value="M" name="gender" id="gender_1" required>
+                        Masculino
+                        <input type="radio" value="F" name="gender" id="gender_2" required>
+                        Femenino
+                        <input type="radio" value="O" name="gender" id="gender_3" required>
+                        Otro
+                    </div>
+                    <div class="field">
+                        <label for="T_blood">Tipo de sangre:</label>
+                        <input type="radio" value="RH+" name="T_blood" id="T_blood1" required>
+                        RH+
+                        <input type="radio" value="RH-" name="T_blood" id="T_blood2" required>
+                        RH-
+                    </div>
+
+
+
+                    <div class="field">
+                        <label for="p_m">Mensaje de presentación:</label>
+                        <textarea name="p_m" id="p_m" rows="3"></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
